@@ -179,7 +179,7 @@ footer {
   color: var(--text-color-dark);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 864px) {
   .weather-app {
     max-width: 90%;
     padding: 20px;
@@ -216,7 +216,7 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 864px) {
   .weather-app {
     max-width: 100%;
     padding: 15px;
