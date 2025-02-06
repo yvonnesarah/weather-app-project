@@ -1,73 +1,77 @@
+/* Define global CSS variables for consistent styling */
 :root {
-  --primary-color: #885df1;
-  --secondary-color: #f65282;
-  --background-color: #f9f7fe;
-  --text-color-light: rgba(39, 33, 66, 0.4);
-  --text-color-dark: rgba(0, 0, 0, 0.6);
-  --font-family: "Roboto", sans-serif;
-  --border-radius: 16px;
-  --padding-base: 30px;
+  --primary-color: #885df1; /* Main theme color */
+  --secondary-color: #f65282; /* Accent color */
+  --background-color: #f9f7fe; /* Light background color */
+  --text-color-light: rgba(39, 33, 66, 0.4); /* Light text color */
+  --text-color-dark: rgba(0, 0, 0, 0.6); /* Darker text color */
+  --font-family: "Roboto", sans-serif; /* Default font family */
+  --border-radius: 16px; /* Rounded corners for UI elements */
+  --padding-base: 30px; /* Default padding size */
 }
 
+/* Global styles */
 body {
-  background-color: var(--background-color);
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: var(--text-color-dark);
+  background-color: var(--background-color); /* Apply background color */
+  font-family: var(--font-family); /* Use global font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  line-height: 1.6; /* Improve text readability */
+  color: var(--text-color-dark); /* Default text color */
 }
 
-h1{
-text-align: center;
-color: #82acff;
+/* Heading styles */
+h1, h2 {
+  text-align: center; /* Center align headings */
+  color: #82acff; /* Light blue heading color */
 }
 
-
-h2{
-text-align: center;
-color: #82acff;
-}
-
+/* Link styles */
 a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s;
+  color: var(--primary-color); /* Default link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
 }
 
+/* Change link color on hover */
 a:hover {
   color: var(--secondary-color);
 }
 
+/* Main container for the weather app */
 .weather-app {
   background: white;
-  max-width: 600px;
-  margin: 45px auto;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  border-radius: var(--border-radius);
-  padding: var(--padding-base);
+  max-width: 600px; /* Restrict maximum width */
+  margin: 45px auto; /* Center align */
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08); /* Soft shadow effect */
+  border-radius: var(--border-radius); /* Apply rounded corners */
+  padding: var(--padding-base); /* Apply default padding */
 }
 
+/* Header section */
 header {
-  border-bottom: 1px solid var(--background-color);
-  padding-bottom: var(--padding-base);
+  border-bottom: 1px solid var(--background-color); /* Separator line */
+  padding-bottom: var(--padding-base); /* Add spacing */
 }
 
+/* Search input field */
 .search-form-input {
   background-color: var(--background-color);
-  border: 2px solid #6a11cb;
-  border-radius: 6px;
-  width: 80%;
+  border: 2px solid #6a11cb; /* Purple border */
+  border-radius: 6px; /* Rounded corners */
+  width: 80%; /* Set width */
   font-size: 16px;
   padding: 15px 20px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s; /* Smooth transition */
 }
 
+/* Change background when input is focused */
 .search-form-input:focus {
   background-color: white;
   outline: none;
 }
 
+/* Search button */
 .search-form-button {
   background: var(--primary-color);
   padding: 15px 30px;
@@ -80,23 +84,26 @@ header {
   transition: background 0.3s;
 }
 
-
+/* Main content section */
 main {
   padding: var(--padding-base) 0;
 }
 
+/* Weather data layout */
 .weather-app-data {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* City name styling */
 .weather-app-city {
   margin: 0;
   font-size: 38px;
   line-height: 48px;
 }
 
+/* Weather details (time, humidity, wind speed, etc.) */
 .weather-app-details {
   font-size: 16px;
   color: var(--text-color-light);
@@ -104,44 +111,48 @@ main {
   font-weight: 500;
 }
 
+/* Highlight important weather data */
 .weather-app-details strong {
   color: var(--secondary-color);
 }
 
+/* Container for temperature display */
 .weather-app-temperature-container {
   display: flex;
   align-items: center;
 }
 
+/* Weather icon */
 .weather-app-icon {
   width: 88px;
   height: 88px;
 }
 
+/* Temperature display */
 .weather-app-temperature {
   font-size: 88px;
   line-height: 88px;
   font-weight: bold;
   margin-left: 10px;
   color: #f65282;
-  font-weight: bold;
-
 }
 
+/* Unit (°C) styling */
 .weather-app-unit {
   margin-top: 6px;
   font-size: 28px;
   color: #f65282;
   font-weight: bold;
-
 }
 
+/* Weather forecast section */
 .weather-forecast {
   display: flex;
   justify-content: space-around;
   margin-top: var(--padding-base);
 }
 
+/* Forecast date styling */
 .weather-forecast-date {
   text-align: center;
   color: #6a11cb;
@@ -150,6 +161,7 @@ main {
   margin-bottom: 10px;
 }
 
+/* Forecast icons */
 .weather-forecast-icon {
   width: 88px;
   height: 88px;
@@ -157,6 +169,7 @@ main {
   margin: 0 auto;
 }
 
+/* Temperature details in forecast */
 .weather-forecast-temperatures {
   text-align: center;
   color: var(--secondary-color);
@@ -165,12 +178,13 @@ main {
   justify-content: center;
 }
 
+/* Individual temperature values */
 .weather-forecast-temperature {
   padding: 0 10px;
-color: #f65282;
-
+  color: #f65282;
 }
 
+/* Footer section */
 footer {
   border-top: 1px solid var(--background-color);
   padding-top: var(--padding-base);
@@ -179,6 +193,7 @@ footer {
   color: var(--text-color-dark);
 }
 
+/* Responsive design adjustments */
 @media (max-width: 864px) {
   .weather-app {
     max-width: 90%;
@@ -216,7 +231,8 @@ footer {
   }
 }
 
-@media (max-width: 864px) {
+/* Additional adjustments for even smaller screens */
+@media (max-width: 600px) {
   .weather-app {
     max-width: 100%;
     padding: 15px;
@@ -258,4 +274,3 @@ footer {
     font-size: 12px;
   }
 }
-

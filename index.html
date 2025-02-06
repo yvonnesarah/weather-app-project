@@ -3,20 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preconnect to Google Fonts for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Import Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    
+    <!-- Import Axios for making HTTP requests -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    
     <title>Weather App Project</title>
   </head>
   <body>
     <div class="weather-app">
-     <h1>Weather App</h1>
+      <!-- Main title of the weather app -->
+      <h1>Weather App</h1>
+      
       <header>
+        <!-- Search form for entering city name -->
         <form class="search-form" id="search-form">
           <input
             type="search"
@@ -28,11 +40,16 @@
           <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
+      
       <hr>
+      
       <main>
         <div class="weather-app-data">
           <div>
+            <!-- City name will be displayed here -->
             <h1 class="weather-app-city" id="city"></h1>
+            
+            <!-- Weather details including time, description, humidity, and wind speed -->
             <p class="weather-app-details">
               <span id="time"></span>,
               <span id="description"></span>
@@ -41,31 +58,38 @@
               <strong id="wind-speed"></strong>
             </p>
           </div>
+          
+          <!-- Container for weather temperature and icon -->
           <div class="weather-app-temperature-container">
-            <div id="icon"></div>
+            <div id="icon"></div> <!-- Weather icon will be inserted here -->
             <div class="weather-app-temperature" id="temperature"></div>
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
-      <hr>
-     <h2>Forecast</h2>
-
+      
+        <hr>
+      
+        <!-- Forecast heading -->
+        <h2>Forecast</h2>
+        
+        <!-- Weather forecast section -->
         <div class="weather-forecast" id="forecast"></div>
       </main>
+      
       <hr>
-
-       <footer>
-       This project was coded by
-        <a href="https://github.com/yvonnesarah" target="_blank"
-          >Yvonne Adedeji</a
-        >
+      
+      <footer>
+        <!-- Footer with project details and links -->
+        This project was coded by
+        <a href="https://github.com/yvonnesarah" target="_blank">Yvonne Adedeji</a>
         and is open-sourced on
         <a href="https://github.com/yvonnesarah/weather-app-project" target="_blank">GitHub</a>
         and hosted on
         <a href="https://ya-weather-app-project.netlify.app/" target="_blank">Netlify</a>.
-       </footer>
-       </div>
-
-    <script src="src/index.js"></script>
+      </footer>
+    </div>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
