@@ -39,6 +39,7 @@ Application can be viewed here:
 
 ## 🖼 Screenshot
 Below is a preview of Weather App:
+
 ![Screenshot](assets/images/weather-app.png "Weather App")
 
 ## 👥 Credit
